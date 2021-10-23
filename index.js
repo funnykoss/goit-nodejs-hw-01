@@ -45,6 +45,7 @@ const argv = program.opts();
 
       case "remove":
         const contact = await removeContact(id);
+        console.log("Contact removed ");
         console.table(contact);
         break;
 
